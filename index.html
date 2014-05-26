@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Etherpad-lite by thelegend831</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/thelegend831/etherpad-lite">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/thelegend831/etherpad-lite/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/thelegend831/etherpad-lite/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Etherpad-lite</h1>
+          <p>Really real-time collaborative document editing for the rest of us</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/thelegend831">thelegend831</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="a-really-real-time-collaborative-word-processor-for-the-web" class="anchor" href="#a-really-real-time-collaborative-word-processor-for-the-web"><span class="octicon octicon-link"></span></a>A really-real time collaborative word processor for the web</h1>
+
+<p><img src="http://i.imgur.com/zYrGkg3.gif" alt="alt text" title="Etherpad in action on PrimaryPad"></p>
+
+<h1>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h1>
+
+<p>Etherpad is a really-real time collaborative editor maintained by the Etherpad Community.</p>
+
+<p>Etherpad is written in Javascript(99.9%) on both the server and client so it's easy for developers to maintain and add new features.  Because of this Etherpad has tons of customizations that you can leverage.</p>
+
+<p>Etherpad is designed to be easily embeddable and provides a <a href="https://github.com/ether/etherpad-lite/wiki/HTTP-API">HTTP API</a>
+that allows your web application to manage pads, users and groups. It is recommended to use the <a href="https://github.com/ether/etherpad-lite/wiki/HTTP-API-client-libraries">available client implementations</a> in order to interact with this API. </p>
+
+<p>There is also a <a href="https://github.com/ether/etherpad-lite-jquery-plugin">jQuery plugin</a> that helps you to embed Pads into your website.</p>
+
+<p>There's also a full-featured plugin framework, allowing you to easily add your own features.  By default your Etherpad is rather sparce and because Etherpad takes a lot of it's inspiration from Wordpress plugins are really easy to install and update.  Once you have Etherpad installed you should visit the plugin page and take control.</p>
+
+<p>Finally, Etherpad comes with translations into most languages!  Users are automatically delivered the correct language for their local settings.</p>
+
+<p><strong>Visit <a href="http://beta.etherpad.org">beta.etherpad.org</a> to test it live.</strong></p>
+
+<p>Also, check out the <strong><a href="https://github.com/ether/etherpad-lite/wiki/FAQ">FAQ</a></strong>, really!</p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>Etherpad works with node v0.8, v0.10 and v0.11, only. (We don't support v0.6)</p>
+
+<h2>
+<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h2>
+
+<h3>
+<a name="prebuilt-windows-package" class="anchor" href="#prebuilt-windows-package"><span class="octicon octicon-link"></span></a>Prebuilt windows package</h3>
+
+<p>This package works out of the box on any windows machine, but it's not very useful for developing purposes...</p>
+
+<ol>
+<li><a href="http://etherpad.org/#download">Download the latest windows package</a></li>
+<li>Extract the folder</li>
+</ol><p>Now, run <code>start.bat</code> and open <a href="http://localhost:9001">http://localhost:9001</a> in your browser. You like it? <a href="#next-steps">Next steps</a>.</p>
+
+<h3>
+<a name="fancy-install" class="anchor" href="#fancy-install"><span class="octicon octicon-link"></span></a>Fancy install</h3>
+
+<p>You'll need <a href="http://nodejs.org">node.js</a> and (optionally, though recommended) git.</p>
+
+<ol>
+<li>Grab the source, either
+
+<ul>
+<li>download <a href="https://github.com/ether/etherpad-lite/zipball/master">https://github.com/ether/etherpad-lite/zipball/master</a>
+</li>
+<li>or <code>git clone https://github.com/ether/etherpad-lite.git</code> (for this you need git, obviously)</li>
+</ul>
+</li>
+<li>start <code>bin\installOnWindows.bat</code>
+</li>
+</ol><p>Now, run <code>start.bat</code> and open <a href="http://localhost:9001">http://localhost:9001</a> in your browser.</p>
+
+<p>Update to the latest version with <code>git pull origin</code>, then run <code>bin\installOnWindows.bat</code>, again.</p>
+
+<p><a href="#next-steps">Next steps</a>.</p>
+
+<h2>
+<a name="gnulinux-and-other-unix-like-systems" class="anchor" href="#gnulinux-and-other-unix-like-systems"><span class="octicon octicon-link"></span></a>GNU/Linux and other UNIX-like systems</h2>
+
+<p>You'll need gzip, git, curl, libssl develop libraries, python and gcc.<br><em>For Debian/Ubuntu</em>: <code>apt-get install gzip git-core curl python libssl-dev pkg-config build-essential</code><br><em>For Fedora/CentOS</em>: <code>yum install gzip git-core curl python openssl-devel &amp;&amp; yum groupinstall "Development Tools"</code>
+<em>For FreeBSD</em>: <code>portinstall node, npm, git (optional)</code></p>
+
+<p>Additionally, you'll need <a href="http://nodejs.org">node.js</a> installed, Ideally the latest stable version, be careful of installing nodejs from apt.</p>
+
+<p><strong>As any user (we recommend creating a separate user called etherpad):</strong></p>
+
+<ol>
+<li>Move to a folder where you want to install Etherpad. Clone the git repository <code>git clone git://github.com/ether/etherpad-lite.git</code>
+</li>
+<li>Change into the new directory containing the cloned source code <code>cd etherpad-lite</code>
+</li>
+</ol><p>Now, run <code>bin/run.sh</code> and open <a href="http://127.0.0.1:9001">http://127.0.0.1:9001</a> in your browser. </p>
+
+<p>Update to the latest version with <code>git pull origin</code>. The next start with bin/run.sh will update the dependencies.</p>
+
+<p>You like it? <a href="#next-steps">Next steps</a>.</p>
+
+<h1>
+<a name="next-steps" class="anchor" href="#next-steps"><span class="octicon octicon-link"></span></a>Next Steps</h1>
+
+<h2>
+<a name="tweak-the-settings" class="anchor" href="#tweak-the-settings"><span class="octicon octicon-link"></span></a>Tweak the settings</h2>
+
+<p>You can initially modify the settings in <code>settings.json</code>. (If you need to handle multiple settings files, you can pass the path to a settings file to <code>bin/run.sh</code> using the <code>-s|--settings</code> option. This allows you to run multiple Etherpad instances from the same installation.)  Once you have access to your /admin section settings can be modified through the web browser.</p>
+
+<p>You should use a dedicated database such as "mysql", if you are planning on using etherpad-in a production environment, since the "dirtyDB" database driver is only for testing and/or development purposes.</p>
+
+<h2>
+<a name="helpful-resources" class="anchor" href="#helpful-resources"><span class="octicon octicon-link"></span></a>Helpful resources</h2>
+
+<p>The <a href="https://github.com/ether/etherpad-lite/wiki">wiki</a> is your one-stop resource for Tutorials and How-to's, really check it out! Also, feel free to improve these wiki pages.</p>
+
+<p>Documentation can be found in <code>docs/</code>.</p>
+
+<h1>
+<a name="development" class="anchor" href="#development"><span class="octicon octicon-link"></span></a>Development</h1>
+
+<h2>
+<a name="things-you-should-know" class="anchor" href="#things-you-should-know"><span class="octicon octicon-link"></span></a>Things you should know</h2>
+
+<p>Read this <a href="http://learn.github.com/p/index.html">git guide</a> and watch this <a href="http://youtu.be/67-Q26YH97E">video on getting started with Etherpad Development</a>.</p>
+
+<p>If you're new to node.js, start with Ryan Dahl's <a href="http://youtu.be/jo_B4LTHi3I">Introduction to Node.js</a>.</p>
+
+<p>You can debug Etherpad using <code>bin/debugRun.sh</code>.</p>
+
+<p>If you want to find out how Etherpad's <code>Easysync</code> works (the library that makes it really realtime), start with this <a href="https://github.com/ether/etherpad-lite/raw/master/doc/easysync/easysync-full-description.pdf">PDF</a> (complex, but worth reading).</p>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
+
+<p>You know all this and just want to know how you can help?</p>
+
+<p>Look at the <a href="https://github.com/ether/etherpad-lite/wiki/TODO">TODO list</a> and our <a href="https://github.com/ether/etherpad-lite/issues">Issue tracker</a>. (Please consider using <a href="http://www.jshint.com/about/">jshint</a>, if you plan to contribute code.)</p>
+
+<p>Also, and most importantly, read our <a href="https://github.com/ether/etherpad-lite/blob/master/CONTRIBUTING.md"><strong>Developer Guidelines</strong></a>, really!</p>
+
+<h1>
+<a name="get-in-touch" class="anchor" href="#get-in-touch"><span class="octicon octicon-link"></span></a>Get in touch</h1>
+
+<p>Join the <a href="http://groups.google.com/group/etherpad-lite-dev">mailinglist</a> and make some noise on our busy freenode irc channel <a href="http://webchat.freenode.net?channels=#etherpad-lite-dev">#etherpad-lite-dev</a>!</p>
+
+<h1>
+<a name="modules-created-for-this-project" class="anchor" href="#modules-created-for-this-project"><span class="octicon octicon-link"></span></a>Modules created for this project</h1>
+
+<ul>
+<li>
+<a href="https://github.com/Pita/ueberDB">ueberDB</a> "transforms every database into a object key value store" - manages all database access</li>
+<li>
+<a href="https://github.com/Pita/channels">channels</a> "Event channels in node.js" - ensures that ueberDB operations are atomic and in series for each key</li>
+<li>
+<a href="https://github.com/Pita/async-stacktrace">async-stacktrace</a> "Improves node.js stacktraces and makes it easier to handle errors"</li>
+</ul><h1>
+<a name="donate" class="anchor" href="#donate"><span class="octicon octicon-link"></span></a>Donate!</h1>
+
+<ul>
+<li><a href="http://flattr.com/thing/71378/Etherpad-Foundation">Flattr</a></li>
+<li>Paypal - Press the donate button on <a href="http://etherpad.org">etherpad.org</a>
+</li>
+<li><a href="https://coinbase.com/checkouts/1e572bf8a82e4663499f7f1f66c2d15a">Bitcoin</a></li>
+</ul><h1>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p><a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License v2</a></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
